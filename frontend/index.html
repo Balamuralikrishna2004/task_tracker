@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cybersecurity Task Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🔐 Cybersecurity Task Tracker</h1>
+            <div class="date-nav">
+                <button id="prevDayBtn">◀</button>
+                <input type="date" id="selectedDate">
+                <button id="nextDayBtn">▶</button>
+            </div>
+        </header>
+
+        <div class="main-content">
+            <!-- Task Form -->
+            <div class="task-form">
+                <h2>➕ Add New Task</h2>
+                <input type="text" id="taskName" placeholder="Task name (e.g., TryHackMe Room)">
+                <input type="time" id="taskTime" value="18:30">
+                <input type="number" id="taskDuration" placeholder="Duration (minutes)" value="90">
+                <select id="taskCategory">
+                    <option value="Cybersecurity">🔒 Cybersecurity</option>
+                    <option value="Workout">💪 Workout</option>
+                    <option value="College">📚 College</option>
+                    <option value="Rest">😴 Rest</option>
+                </select>
+                <button id="addTaskBtn">Add Task</button>
+            </div>
+
+            <!-- Today's Tasks -->
+            <div class="tasks-section">
+                <h2>📋 Today's Schedule</h2>
+                <div id="tasksList" class="tasks-list"></div>
+            </div>
+        </div>
+
+        <!-- Report Section -->
+        <div class="report-section">
+            <h2>📊 Weekly Report</h2>
+            <button id="generateReportBtn">Generate Weekly Report</button>
+            <div id="reportResult" class="report-result"></div>
+        </div>
+
+        <!-- Reminder Toggle -->
+        <div class="reminder-control">
+            <label>
+                <input type="checkbox" id="reminderToggle" checked>
+                🔔 Enable Desktop Reminders
+            </label>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
