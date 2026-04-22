@@ -24,16 +24,17 @@ A full-stack task management application designed for students, especially those
 | JavaScript (Vanilla) | - | - | - |
 
 ## 📁 Project Structure
+
 task-tracker/
 ├── backend/
-│ ├── server.js # Express server with API routes
-│ ├── package.json # Node.js dependencies
-│ └── database.sqlite # SQLite database (auto-created)
+│ ├── server.js 
+│ ├── package.json
+│ └── database.sqlite
 ├── frontend/
-│ ├── index.html # Main UI
-│ ├── style.css # Styling with glassmorphism effect
-│ └── script.js # Frontend logic & reminders
-└── README.md # This file
+│ ├── index.html 
+│ ├── style.css 
+│ └── script.js 
+└── README.md 
 
 
 ## 🚀 How to Run Locally
@@ -43,7 +44,6 @@ task-tracker/
 - Git Bash / Terminal
 
 ### Step 1: Clone the repository
-bash
 git clone https://github.com/Balamuralikrishna2004/task_tracker.git
 cd task_tracker
 
